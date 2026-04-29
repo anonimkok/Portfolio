@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental - Premium Car Rental Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div id="search">
+        <div class="title">
+            <h1><i class="fas fa-car-side"></i> Car Rental</h1>
+            <p>Find the perfect car for your next adventure</p>
+            <hr>
+        </div>
+        <div class="form-container">
+            <div class="form-group">
+                <label for="pickup"><i class="fas fa-map-marker-alt"></i> Rental Location:</label>
+                <select id="pickup" name="pickup">
+                    <option value="">Select Location</option>
+                    <option value="location1">Yogyakarta</option>
+                    <option value="location2">Bali</option>
+                    <option value="location3">Jakarta</option>
+                    <option value="location4">Bandung</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pickup-date"><i class="fas fa-calendar-alt"></i> Start Date:</label>
+                <input type="date" id="pickup-date" name="pickup-date">
+            </div>
+            <div class="form-group">
+                <label for="return-date"><i class="fas fa-calendar-check"></i> End Date:</label>
+                <input type="date" id="return-date" name="return-date">
+            </div>
+            <button type="submit" class="search-btn">
+                <i class="fas fa-search"></i> Search Cars
+            </button>
+        </div>
+    </div>
+
+    <!-- Car List Section -->
+    <div class="car-list">
+        <div class="section-header">
+            <h2><i class="fas fa-th-list"></i> Available Cars</h2>
+            <p>Choose from our premium collection</p>
+        </div>
+        
+        <div class="cars-grid">
+            <div class="car-item">
+                <div class="car-image-container">
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=500&fit=crop" alt="Ford Mustang Shelby GT350R">
+                    <div class="car-badge">Premium</div>
+                </div>
+                <div class="car-info">
+                    <h3>Ford Mustang Shelby GT350R</h3>
+                    <div class="car-features">
+                        <span class="feature"><i class="fas fa-gas-pump"></i> V8 5.2L</span>
+                        <span class="feature"><i class="fas fa-tachometer-alt"></i> 526 HP</span>
+                        <span class="feature"><i class="fas fa-cog"></i> Automatic</span>
+                    </div>
+                    <div class="car-price">
+                        <span class="price">Rp 2.500.000</span>
+                        <span class="per-day">/day</span>
+                    </div>
+                    <button class="book-btn">Book Now <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="car-item">
+                <div class="car-image-container">
+                    <img src="https://i0.wp.com/autonetmagz.com/wp-content/uploads/2014/12/Mitsubishi-Lancer-Evolution-X-Final-Edition.jpg?resize=800%2C533&ssl=1" alt="Mitsubishi Lancer Evolution X">
+                    <div class="car-badge">Sport</div>
+                </div>
+                <div class="car-info">
+                    <h3>Mitsubishi Lancer Evolution X</h3>
+                    <div class="car-features">
+                        <span class="feature"><i class="fas fa-gas-pump"></i> 2.0L Turbo</span>
+                        <span class="feature"><i class="fas fa-tachometer-alt"></i> 295 HP</span>
+                        <span class="feature"><i class="fas fa-cog"></i> Manual</span>
+                    </div>
+                    <div class="car-price">
+                        <span class="price">Rp 1.800.000</span>
+                        <span class="per-day">/day</span>
+                    </div>
+                    <button class="book-btn">Book Now <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="car-item">
+                <div class="car-image-container">
+                    <img src="https://i0.wp.com/autonetmagz.com/wp-content/uploads/2017/05/nissan-skyline-gtr-r34-bayside-blue.jpg?resize=1200%2C666&ssl=1" alt="Nissan Skyline GT-R R34">
+                    <div class="car-badge">Legend</div>
+                </div>
+                <div class="car-info">
+                    <h3>Nissan Skyline GT-R R34</h3>
+                    <div class="car-features">
+                        <span class="feature"><i class="fas fa-gas-pump"></i> 2.6L Twin-Turbo</span>
+                        <span class="feature"><i class="fas fa-tachometer-alt"></i> 493 HP</span>
+                        <span class="feature"><i class="fas fa-cog"></i> 6-Speed</span>
+                    </div>
+                    <div class="car-price">
+                        <span class="price">Rp 3.200.000</span>
+                        <span class="per-day">/day</span>
+                    </div>
+                    <button class="book-btn">Book Now <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="car-item">
+                <div class="car-image-container">
+                    <img src="data:image/jpeg;base64,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" alt="Toyota Supra A90">
+                    <div class="car-badge">New</div>
+                </div>
+                <div class="car-info">
+                    <h3>Toyota Supra A90</h3>
+                    <div class="car-features">
+                        <span class="feature"><i class="fas fa-gas-pump"></i> 3.0L Turbo</span>
+                        <span class="feature"><i class="fas fa-tachometer-alt"></i> 382 HP</span>
+                        <span class="feature"><i class="fas fa-cog"></i> Automatic</span>
+                    </div>
+                    <div class="car-price">
+                        <span class="price">Rp 2.200.000</span>
+                        <span class="per-day">/day</span>
+                    </div>
+                    <button class="book-btn">Book Now <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
