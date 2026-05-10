@@ -1,4 +1,3 @@
-// Interaksi Form
 document.getElementById('formHimaka')?.addEventListener('submit', function(e) {
     e.preventDefault();
     const name = document.getElementById('name').value;
@@ -8,7 +7,6 @@ document.getElementById('formHimaka')?.addEventListener('submit', function(e) {
     this.reset();
 });
 
-// Efek Glow saat scroll
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
     if (window.scrollY > 50) {
